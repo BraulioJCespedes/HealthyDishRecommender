@@ -1,0 +1,44 @@
+<div class="container">
+        <div class="row mb-4 mb-lg-5">
+            <div class="col-lg-2 col-sm-4"></div>
+            <div class="col-lg-8 col-mb-6">
+                <!-- Form -->
+                <form id="dishForm" method="post">
+                    <div class="mb-4">
+                        <label for="dishName">Dish Name</label>
+                        <input type="text" class="form-control" id="dishName" name="dishName" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="ingredients">Ingredients</label>
+                        <input type="text" class="form-control" placeholder="Bread, lettuce, tomato, beef patty, cheese" id="ingredients" name="ingredients" required>
+                        <small>Please, Add each ingredient with a comma separating them</small>
+                    </div>
+                    <div class="mb-3">
+                        <label class="my-1 me-2" for="inlineFormCuisineSelectPref">Cuisine</label>
+                        <select class="form-select" id="inlineFormCuisineSelectPref" name="cuisine" required>
+                            <option selected disabled>Select a cuisine</option>
+                            <option value="Italian">Italian</option>
+                            <option value="American">American</option>
+                            <option value="Japanese">Japanese</option>
+                            <option value="Mexican">Mexican</option>
+                            <option value="Indian">Indian</option>
+                            <option value="Middle Eastern">Middle Eastern</option>
+                            <option value="Chinese">Chinese</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="Russian">Russian</option>
+                            <option value="Korean">Korean</option>
+                            <option value="British">British</option>
+                            <option value="French">French</option>
+                            <option value="Greek">Greek</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+                <!-- End of Form -->
+            </div>
+            <!--<div class="col-lg-4 col-sm-6"></div>-->
+        </div>
+    </div>
