@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM python:3.10.14-bookworm
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -12,5 +12,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+EXPOSE 5005
 # gunicorn
 CMD ["gunicorn", "--config", "gunicorn-cfg.py", "run:app"]
