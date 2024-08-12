@@ -1,10 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<style>
+    .btn {
+        flex: 1; /* Makes both buttons equal in width */
+        text-align: center; /* Centers the text horizontally */
+        display: flex; /* Enables flexbox layout */
+        align-items: center; /* Centers the text vertically */
+        justify-content: center; /* Centers the text horizontally within the flexbox */
+    }
+    .btn-secondary {
+        background-color: #17a2b8; /* Change this to your desired background color */
+        color: white; /* Change this to your desired text color */
+        border-color: #17a2b8; /* Optional: matches the border color with the background */
+    }
+</style>
 
-</body>
-</html>
+        <div class="section section-sm pb-0 mb-n4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h3 class="text-center">Your recommendation is ready</h3>
+                </div>
+            </div>
+        </div>
+
+<div class="section section-md">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0"></div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="card shadow">
+                            <img src="/static/assets/img/foods/healthyDish.jpg" class="card-img-top rounded-top"
+                                alt="Themesberg office">
+                            <div class="card-body">
+                                <h3 class="h5 card-title mt-3">{{ results }}</h3>
+                                <p class="card-text">On this part a brief description or recipe the dish.
+                                There is also information about the calories and other dietary details about the recommendation</p>
+                                <div style="display: flex; gap: 10px;">
+                                    <a href="#" class="btn btn-primary btn-sm">Save result</a>
+                                    <a href="./index.html" class="btn btn-secondary btn-sm">Try another recommendation</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0"></div>
+                </div>
+            </div>
+        </div>
