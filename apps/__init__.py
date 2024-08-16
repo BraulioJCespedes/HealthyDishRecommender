@@ -14,7 +14,6 @@ from importlib import import_module
 db = SQLAlchemy()
 login_manager = LoginManager()
 
-
 def register_extensions(app):
     db.init_app(app)
     login_manager.init_app(app)
@@ -45,7 +44,7 @@ def configure_database(app):
 
     @app.teardown_request
     def shutdown_session(exception=None):
-        db.session.remove() 
+        db.session.remove()
 
 
 def  create_app(config):

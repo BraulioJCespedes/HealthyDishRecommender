@@ -30,12 +30,11 @@
                             <img src="/static/assets/img/foods/healthyDish.jpg" class="card-img-top rounded-top"
                                 alt="Themesberg office">
                             <div class="card-body">
-                                <h3 class="h5 card-title mt-3">{{ results }}</h3>
-                                <p class="card-text">On this part a brief description or recipe the dish.
-                                There is also information about the calories and other dietary details about the recommendation</p>
+                                <h3 class="h5 card-title mt-3">{{ results[0] }}</h3>
+                                <p class="card-text">{{ results[1] }}</p>
                                 <div style="display: flex; gap: 10px;">
                                     <a href="#" class="btn btn-primary btn-sm">Save result</a>
-                                    <a href="./index.html" class="btn btn-secondary btn-sm">Try another recommendation</a>
+                                    <a href="./index" class="btn btn-secondary btn-sm">Try another recommendation</a>
                                 </div>
                             </div>
                         </div>
