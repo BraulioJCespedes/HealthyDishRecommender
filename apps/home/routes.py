@@ -8,9 +8,9 @@ from flask import render_template, request
 from flask_login import login_required
 from jinja2 import TemplateNotFound
 import google.generativeai as genai
+import os
 
-
-genai.configure(api_key='AIzaSyCpa_B_yPMpmntT3YOkrVQ85cH9l7O5pIw')
+genai.configure(api_key=os.environ["API_KEY"])
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 
